@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const { mongoose } = require('./db'); // Import mongoose from db file
+//const  db = require('./db'); // { mongoose } Import mongoose from db file
 const PORT = process.env.PORT||3000;
 const db = require("./db")
 const Person = require("./person")
