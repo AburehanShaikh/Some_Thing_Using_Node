@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-//const  db = require('./db'); // { mongoose } Import mongoose from db file
+const { mongoose } = require('./db'); // { mongoose } Import mongoose from db file
 const PORT = process.env.PORT||3000;
 const db = require("./db")
 const Person = require("./person")
@@ -26,6 +26,6 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(PORT,()=>{
+app.listen(3000,()=>{
     console.log(`Server is running at port`)
 })
