@@ -19,7 +19,7 @@ app.use("/menu",menuRoutes)
 
 
 app.get('/', (req, res) => {
-    res.send('<h1>HelloWorld</h1>')
+    res.send('<h1>Welcome! HelloWorld</h1>')
 })
 
 
