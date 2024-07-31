@@ -1,0 +1,24 @@
+// server.js
+
+app.get('/test', (req, res) => {
+    res.send('<h1>HelloWorld</h1>')})
+app.get('/home', (req, res) => {
+    res.send('<h1>HomePage</h1>')
+})
+app.get('/about', (req, res) => {
+    res.send('<h1>AboutPage</h1>')
+})
+app.get('/next', (req, res) => {
+    res.send(` <html>
+            <body>
+                <button id="clickMeButton">ClickMe</button>
+                <script>
+                    document.getElementById('clickMeButton').addEventListener('click', function() {
+                        window.location.href = '/home';
+                    });
+                </script>
+            </body>
+        </html>`
+    )
+})
+
