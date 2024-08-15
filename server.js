@@ -30,7 +30,8 @@ app.get('/',  (req, res) => {
 
 const  personRoutes = require("./personRoutes")
 const menuRoutes = require("./MenuRoutes")
-app.use("/person",LocalAuthMiddleware,personRoutes)
+
+app.use("/person",personRoutes)
 app.use("/menu",LocalAuthMiddleware,menuRoutes)
 
 
